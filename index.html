@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify player</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/spotify.js"></script>
+</head>
+<body>
+ 
+  <div class="widget">
+    <div class ="search">
+      <p class="search_form">Buscar canción</p>
+        <form>
+            <input type="text" name="name">
+            <input type="submit" value ="submit">
+        </form>
+    </div>
+    <div class="header">
+     
+    <!-- Try adding/removing these classes: -->
+    <!-- disabled -->
+    <!-- playing -->
+    <div class="btn-play disabled"></div>
+
+    <div class="metadata">
+      <p class="title"></p>
+      <p class="author"></p>
+
+      <div class="seekbar">
+        <progress value="5" max="30"></progress>
+      </div>
+    </div>
+    </div>
+    <div class="cover">
+    <img>
+    </div>
+
+    <audio  class="js-player"></audio>
+  </div>
+
+</body>
+</html>
+
